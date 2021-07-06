@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>80 Days of Art | Blog</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/6774c2d0a4.js" crossorigin="anonymous"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+
+</head>
+
+<body>
+	<a name="home"></a>
+	<div class="main-title">
+		<div class="clouds" id="clouds"></div>
+		<img src="img/baner.png" alt="header-image">
+	</div>
+	<div class="header">
+		<div class="logo">
+			<i class="fas fa-bars" onclick="hamburgerMenu()"></i>
+			<img src="img/logo.png" alt="site-logo">
+			<audio class="audio" controls>
+				<source src="nature.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		<div class="menu" id="menu">
+			<a href=#home>Home</a>
+			<a href=#blog>Blog</a>
+			<a href=#about>About</a>
+			<a href=#contact>Contact</a>
+		</div>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.waves.min.js"></script>
+		<script>
+		  VANTA.WAVES('#clouds')
+		</script> -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.clouds.min.js"></script>
+		<script>
+			VANTA.CLOUDS({
+				el: '#clouds', // element selector string or DOM object reference
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 200.00,
+				minWidth: 200.00,
+				skyColor: 0xC8AEE0,
+				cloudShadowColor: 0xae699a
+			})
+		</script>
+	</div>
+	<div class="content">
+		<div class="sidebar" id="sidebar">
+			<div class="sidebar-menu" id="sidebar-menu">
+				<div><a href=#home>Home</a></div>
+				<div><a href=#blog>Blog</a></div>
+				<div><a href=#about>About</a></div>
+				<div><a href=#contact>Contact</a></div>
+			</div>
+			<div class="image-widget">
+				<h3>Meet the Team</h3>
+				<div class="widget-item">
+					<a href=#about>
+						<img src="img/staff1.jpg">
+						<h4>Clarra Berry</h4>
+						<p>"The Earth is just eh without art."</p>
+					</a>
+				</div>
+				<div class="widget-item">
+					<a href=#about>
+						<img src="img/staff2.jpg">
+						<h4>May Lee</h4>
+						<p>"It is only thorugh art that I can fully express myself."</p>
+					</a>
+				</div>
+				<div class="widget-item">
+					<a href=#about>
+						<img src="img/staff3.jpg">
+						<h4>Elizabeth Keen</h4>
+						<p>"I want to see others just as happy as I am with art.</p>
+					</a>
+				</div>
+				<div class="viewers-widget">
+					<h3>Current viewers:</h3>
+					<p id="viewers">30</p>
+				</div>
+			</div>
+		</div>
+		<div class="main-content">
+			<a name="blog"></a>
+			<h3 class="section-title">POSTS</h3>
+			<div class="blog-container">
+				<div class="blog-item">
+					<img class="blog-img" src="img/blog-post-1.jpg" alt="Man behind computer screen" />
+					<h2>How to Protect Yourself From Online Art Scams</h2>
+					<p class="title">Posted on 18.06.2021 by <a href="#about">Clarra Berry</a></p>
+					<p>As an artist, having an online art presence is essential — not just for selling work, but for
+						creating relationships
+						with other artists, clients, and partners that will benefit your art career. </p>
+					<div class="blog-bottom">
+						<a href="https://www.artworkarchive.com/blog/how-to-protect-yourself-from-online-art-scams">Read
+							more...</a>
+						<span class="social-icons">
+							<i title="Share on Twitter" class="fab fa-twitter"></i>
+							<i title="Share on Facebook" class="fab fa-facebook"></i>
+							<i title="Share via Email" class="fas fa-envelope"></i>
+						</span>
+					</div>
+				</div>
+				<div class="blog-item">
+					<img class="blog-img" src="img/blog-post-2.png" alt="Phone on table with fruits" />
+					<h2>8 Ways to Promote Your Public Page to Increase Sales</h2>
+					<p class="title">Posted on 17.06.2021 by <a href="#about">Elizabeth Keen</a></p>
+					<p>Imagine an online portfolio linked to your inventory that can result in sales! Imagine a site
+						that takes no commission
+						and connects you directly with interested buyers.</p>
+					<div class="blog-bottom">
+						<a
+							href="https://www.artworkarchive.com/blog/8-ways-to-promote-your-public-page-to-increase-sales">Read
+							more...</a>
+						<span class="social-icons">
+							<i title="Share on Twitter" class="fab fa-twitter"></i>
+							<i title="Share on Facebook" class="fab fa-facebook"></i>
+							<i title="Share via Email" class="fas fa-envelope"></i>
+						</span>
+					</div>
+				</div>
+				<div class="blog-item">
+					<img class="blog-img" src="img/blog-post-3.jpg" alt="Woman doing pottery" />
+					<h2>9 Productivity Tips for Artists Working from Home</h2>
+					<p class="title">Posted on 16.06.2021 by <a href="#about">May Lee</a></p>
+					<p>In the studio, you are the boss—there is no answering to anyone else. Your time is your own, and
+						you get to
+						decide how to spend it. How refreshing, right?</p>
+					<div class="blog-bottom">
+						<a href="https://www.artworkarchive.com/blog/9-productivity-tips-for-artists-working-from-home">Read
+							more...</a>
+						<span class="social-icons">
+							<i title="Share on Twitter" class="fab fa-twitter"></i>
+							<i title="Share on Facebook" class="fab fa-facebook"></i>
+							<i title="Share via Email" class="fas fa-envelope"></i>
+						</span>
+					</div>
+				</div>
+				<div class="blog-item">
+					<img class="blog-img" src="img/blog-post-4.jpg" alt="Phone screen" />
+					<h2>Quick Guide: 4 Essential Apps for Artists on Instagram</h2>
+					<p class="title">Posted on 15.06.2021 by <a href="#about">Clarra Berry</a></p>
+					<p>Unlike other social media platforms, Instagram seems to be tailor-made for artists.
+						From its visual nature and ease of use this app could
+						easily become your new favorite way to share your art and creative spirit.</p>
+					<div class="blog-bottom">
+						<a
+							href="https://www.artworkarchive.com/blog/quick-guide-4-essential-apps-for-artists-on-instagram">Read
+							more...</a>
+						<span class="social-icons">
+							<i title="Share on Twitter" class="fab fa-twitter"></i>
+							<i title="Share on Facebook" class="fab fa-facebook"></i>
+							<i title="Share via Email" class="fas fa-envelope"></i>
+						</span>
+					</div>
+				</div>
+				<div class="blog-item">
+					<img class="blog-img" src="https://media.giphy.com/media/jqNyabIfCWGJJspQhX/giphy.gif"
+						alt="painting gif" />
+					<h2>How to Create a Watercolor Mermaid Illustration in Adobe Illustrator</h2>
+					<p class="title">Posted on 16.06.2021 by <a href="https://tutsplus.com/authors/maria-dimova">Maria
+							Dimova</a></p>
+					<p>In this tutorial we’ll be creating a colorful character of a mermaid, imitating a watercolor
+						painting technique
+						in Adobe Illustrator. One of the most beautiful and touching characters from the fairytale The
+						Little Mermaid will
+						serve as an inspiration to us.</p>
+					<div class="blog-bottom">
+						<a
+							href="https://design.tutsplus.com/tutorials/how-to-create-a-watercolor-mermaid-illustration-in-adobe-illustrator--cms-28917">Read
+							more...</a>
+						<span class="social-icons">
+							<i title="Share on Twitter" class="fab fa-twitter"></i>
+							<i title="Share on Facebook" class="fab fa-facebook"></i>
+							<i title="Share via Email" class="fas fa-envelope"></i>
+						</span>
+					</div>
+				</div>
+				<div class="blog-item">
+					<img class="blog-img" src="https://i.gifer.com/LHRb.gif" alt="Bob Ross gif" />
+					<h2>Bob Ross’ Color Palette in CSS</h2>
+					<p class="title">Posted on 15.06.2021 by <a href="#about">May Lee</a></p>
+					<p>Even if you’ve never watched an episode of The Joy of Painting, there’s a good chance you’re
+						familiar with
+						artist Bob Ross, with his trademark afro and “happy little trees”.</p>
+					<div class="blog-bottom">
+						<a href="https://thomaspark.co/2015/11/bob-ross-color-palette-in-css/">Read more...</a>
+						<span class="social-icons">
+							<i title="Share on Twitter" class="fab fa-twitter"></i>
+							<i title="Share on Facebook" class="fab fa-facebook"></i>
+							<i title="Share via Email" class="fas fa-envelope"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+			<h3 class="section-title">VIDEO OF THE DAY</h3>
+			<div class="video">
+				<iframe class="iframe-video" src="https://www.youtube.com/embed/oo8_NODWjbw"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+			<a name="about"></a>
+
+			<div class="about">
+				<h3>ABOUT</h3>
+				<p>Hi, we are a team of art-lovers that wants to bring you the best art experience!</p>
+				<p>Our goal is to constantly post just the right content to make sure all of our readers are educated
+					enough to start an
+					art career on their own.
+				</p>
+				<div class="team-container">
+					<div class="team-member">
+						<a name="clarra"> </a>
+						<img src="img/staff1.jpg" alt="Clarra Berry">
+						<h4>Clarra Berry</h4>
+					</div>
+					<div class="team-member">
+						<a name="may"> </a>
+						<img src="img/staff2.jpg" alt="May Lee">
+						<h4>May Lee</h4>
+					</div>
+					<div class="team-member">
+						<a name="elizabeth"> </a>
+						<img src="img/staff3.jpg" alt="Elizabeth Keen">
+						<h4>Elizabeth Keen</h4>
+					</div>
+				</div>
+			</div>
+			<a name="contact"></a>
+			<h3 class="section-title">CONTACT US</h3>
+			<div class="contact-container">
+				<div class="map">
+					<iframe class="iframe-map"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46924.89727829299!2d23.25047722370616!3d42.68664991643053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa9b2543b14005%3A0xea8e06ca71a2aede!2sNew%20Bulgarian%20University!5e0!3m2!1sen!2sbg!4v1624027100336!5m2!1sen!2sbg"
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div class="contact-form">
+					<div class="form-name">
+						<h3>Have any questions? Fill in the form below and we will get back to you ASAP.</h3>
+					</div>
+					<label for="name">Name</label><br>
+					<input type="text" id="name" name="name" placeholder="Please enter your name"><br>
+
+					<label for="plink">E-Mail</label><br>
+					<input type="email" id="email" name="email" placeholder="Please enter your email address"><br>
+
+					<label for="comment">Comment</label><br>
+					<textarea id="comment" name="comment" placeholder="Write us something!"
+						style="height:100px"></textarea>
+
+					<div class="submit">
+						<button type="submit" name="submit" onclick="submit()">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="footer-copyright">
+			<p>Ekaterina Gerasimova F090894</p>
+			<p>Copyright &copy; 2021</p>
+			<p>All rights reserved.</p>
+		</div>
+		<div class="footer-socialmedia">
+			<i class="fab fa-github"></i>
+			<a href="https://github.com/crowlione">GitHub</a><br>
+			<i class="fab fa-instagram"></i>
+			<a href="https://www.instagram.com/80.daysofart/?hl=en">@80.daysofart</a><br>
+			<i class="fas fa-phone"></i>
+			<a>02 811 0180</a><br>
+			<i class="fas fa-envelope-open"></i>
+			<a>eg.phpmails@gmail.com</a>
+		</div>
+		<div class="footer-address">
+			<p>ul. "Montevideo" 21</p>
+			<p>1618 g.k. Ovcha kupel 2</p>
+			<p>Sofia, Bulgaria</p>
+		</div>
+	</footer>
+	<script src="./functions.js"></script>
+
+</body>
+
+</html>
